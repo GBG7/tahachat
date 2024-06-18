@@ -1,0 +1,85 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ask my skills
+  - ask my job experience
+  - ask my projects
+
+responses:
+  utter_greet:
+  - text: "Hi there! Welcome to lilsolar-AI! How can I assist you today?"
+
+  utter_ask_skills:
+    - text: "
+      I'm very proficient in various tech stacks and languages. \n
+      Web-hosting: FileZilla, GoDaddy, ReactJS Frameworks (Next.js, Chakra UI, Tailwind) HTML/CSS/JavaScript \n
+      Dev Tools: VSCode, JetBrain IDE, Docker, Git, React, Arduino IDE \n
+      Languages: Python 3.X, C++, HTML/CSS/JavaScript \n
+      Hardware/Platforms: Linux (Debian, Ubuntu, PopOS), Windows, Arduino\n
+                  you fucking name it, i got it!"
+
+  utter_ask_experience:
+    - text: "Certainly! \n
+    lol jk i'm not chatgpt, i'm tahagpt \n\n
+    I have 1+ year(s) of experience as a Tech Lead for the Google Developers Student Club @ UofT Mississauga, where
+      i've contributed HEAVILY to the \"tech scene\" of the university & campus\n
+    I've volunteered for local and city-wide events like UoftCTF, DevFest Canada\n
+    I've hosted my own workshop Ctrl+Alt+Activism\n
+      \n \n
+      
+    I also was a Web Developer Exec for the Satec Astro Club, where I organized and managed the 
+      website/social media presence of the club, and lead a team of 6 to do the same!\n \n  
+  
+    Furthermore, I had a stint as a Student Tech Concierge at Presentation Manor - a retirement home. \n
+    There, I assisted the elderly with their daily technical needs, and I helped work the TV & Monitoring system in place for the resident's safety!
+    
+    If you wanna learn more, feel free to ask for my resume/visit my website!
+    "
+
+  utter_projects:
+    - text: "A project I'm very proud of is this lilsolar-AI chatbot! Using RASA, I built and trained my own model after myself.\n 
+    This made me proficient in YAML & LLM training\n\n 
+    
+    Related to LLM's, for the UofTCTF competition, I helped create one of the challenges - LLM Multi-step web app challenge\n
+    I helped program the front end and the LLM section - which held clues for the flags needed! \n\n
+    
+    I've done projects relating to React frameworks asw! My personal portfolio site was made using reactjs.
+    \n\n
+    If you wanna learn more, poke around my website or resume!  
+    "
+
+  utter_cgoals:
+    - text: "My career goals include continuing to develop my technical skills and taking on more leadership responsibilities.\n 
+    I aim to work on cutting-edge projects that have a significant impact on the industry and contribute to the success of my team and organization."
+
+  utter_edu:
+    - text: "I'm working towards a BA in Computer Science & Statistics at the University of Toronto!\n 
+    With a GPA of 3.x, I focused on software development, data structures, algorithms, Calculus, discreet maths & more!\n
+    Hoping to secure worthwhile internships in the upcoming years!"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am lilsolar-AI, a virtual representation of Taha Sarfraz. How can I help you today?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

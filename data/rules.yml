@@ -1,0 +1,38 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Tell user your skills
+  steps:
+    - intent: ask my skills
+    - action: utter_ask_skills
+
+- rule: tell user your experience
+  steps:
+    - intent: ask my job experience
+    - action: utter_ask_experience
+
+- rule: tell user your projects
+  steps:
+    - intent: ask my projects
+    - action: utter_projects
+
+- rule: tell user your career goals
+  steps:
+    - intent: ask my career goals
+    - action: utter_cgoals
+
+- rule: tell user your education
+  steps:
+    - intent: ask my edu
+    - action: utter_edu
